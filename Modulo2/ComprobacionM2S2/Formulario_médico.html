@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <h1>FORMULARIO</h1>
+    <form action="Redireccion_form_medico.html" method="post">
+      <label for="nombre">NOMBRE</label>
+      <br>
+      <input type="text" name="nombre" id="nombre" required/>
+      <br><br>
+      <label for="dirección">DIRECCIÓN</label>
+      <br>
+      <input type="text" name="dirección" id="dirección" required />
+      <br><br>
+      <label for="especialidad">ESPECIALIDAD MEDICA</label>
+      <br>
+      <input type="text" name="especialidad" list="especialidad" required/>
+      <datalist id="especialidad" >
+        <option value="Cardiología"></option>
+        <option value="Cirugía"></option>
+        <option value="Medicina General"></option>
+        <option value="Pediatría"></option>
+        <option value="Traumatología"></option>
+        <option value="Neurología"></option>
+      </datalist>
+      <br><br>
+      <label for="fecha">FECHA</label>
+      <br>
+      <input type="date" name="fecha" value="fecha" id="fecha" required/>
+      <br><br>
+      <label for="hora">HORA</label>
+      <br>
+      <input type="time" name="hora" value="hora" id="hora" required/>
+      <br><br>
+      <label for="email">CORREO</label>
+      <br>
+      <input type="email" name="email" id="email" required/>
+      <br><br>
+      <input type="submit" value="CONFIRMAR" />
+    </form>
+  </body>
+</html>

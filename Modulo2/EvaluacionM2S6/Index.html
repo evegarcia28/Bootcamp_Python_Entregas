@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/CSS/estilos.css">
+    <title>AeroVia Express</title>
+</head>
+
+<body>
+    <!--barra de navegación-->
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><span class="letra">AeroVia Express</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Ofertas y destinos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Mis viajes
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Centro de Ayuda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Estado de vuelo</a>
+                        </li>
+                    </ul>
+                    <button class="btn-sesion">Iniciar Sesión</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--sección promocional más imagen-->
+    <section class="flex-container">
+        <div class="promocional">
+            <h3>¡Vacaciones de verano!</h3>
+            <h6>Vuela por Chile y Sudamérica con hasta 40% de descuento</h6>
+            <br>
+            <p>Encuentra paquetes, hoteles, seguros y arriendo de autos en AeroVía Express</p>
+            <a href="" target="_blank">Compra aquí</a>
+        </div>
+        <div class="contenedor-imagen">
+            <img src="Assets/Images/polynesia.jpg" alt="Polinesia" class="img-fluid">
+        </div>
+    </section>
+    <!--tabla de viajes-->
+    <section class="buscador">
+        <ul class="nav-menu">
+            <li><a href="#">Vuelos</a></li>
+            <li><a href="#">Paquetes</a></li>
+            <li><a href="#">Hoteles</a></li>
+            <li><a href="#">Autos</a></li>
+            <li><a href="#">Seguros</a></li>
+            <li><a href="#">Upgrade</a></li>
+        </ul>
+    <!--selección de alternativas de vuelo-->
+        <div class="seleccion">
+            <div class="col-sm-2">
+                <form>
+                    <select id="tipo" name="tipo">
+                        <option value="">Ida y Vuelta</option>
+                        <option value="">Ida</option>
+                        <option value="">Vuelta</option>
+                    </select>
+                </form>
+            </div>
+            <div class="col-sm-2">
+                <form>
+                    <select id="categoría" name="categoría">
+                        <option value="">Economy</option>
+                        <option value="">Turista</option>
+                        <option value="">Primera</option>
+                    </select>
+                </form>
+            </div>
+            <div class="col-sm-2">
+                <form>
+                    <select id="npasajero" name="npasajero">
+                        <option value="">1 pasajero</option>
+                        <option value="">2 pasajeros</option>
+                        <option value="">N pasajeros</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        <!--origen, destino y fechas-->
+        <nav class="fechas">
+            <input class="estilo" type="text" placeholder="Origen">
+            <input class="estilo" type="text" placeholder="Destino">
+            <input class="estilo bg-light" type="text" placeholder="Fecha Ida">
+            <input type="date" class="estilo">
+            <input class="estilo bg-light" type="text" placeholder="Fecha Vuelta">
+            <input type="date" disabled class="estilo">
+            <button type="button" class="btn btn-danger m-2">Buscar</button>
+        </nav>
+    </section>
+
+
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

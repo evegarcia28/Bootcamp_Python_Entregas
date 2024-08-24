@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/CSS/styles.css">
+    <title>Banco Demo</title>
+</head>
+
+<body>
+    <main>
+        <h1>Bienvenido al Banco Demo</h1>
+        <section >
+            <div  id="login">
+                <h2>Iniciar Sesión</h2>
+                <label  for="id">Identificador Cliente:</label><br>
+                <input class="formato" type="text" id="id"><br><br>
+                <label  for="password">Clave:</label><br>
+                <input class="formato" type="password" id="password"><br><br>
+                <button onclick="login()">Ingresar</button>
+                <p id="error" style="color: red;"></p>
+            </div>
+            <div id="menu" style="display: none;">
+                <h2>Menú</h2>
+                <button onclick="checkBalance()">Ver Saldo</button><br>
+                <button onclick="retiro()">Realizar Giro</button><br>
+                <button onclick="deposito()">Realizar Depósito</button><br>
+                <button onclick="logout()">Salir</button><br>
+                
+            </div>
+        </section>
+    </main>
+    <script src="assets/index.js"></script>
+</body>
+
+</html>
