@@ -1,0 +1,87 @@
+Tabla;Columna;Tipo de Dato;¿Puede ser nulo?
+actor;last_update;timestamp without time zone;NO
+actor;actor_id;integer;NO
+actor;last_name;character varying;NO
+actor;first_name;character varying;NO
+address;postal_code;character varying;YES
+address;last_update;timestamp without time zone;NO
+address;district;character varying;NO
+address;address2;character varying;YES
+address;address;character varying;NO
+address;city_id;smallint;NO
+address;address_id;integer;NO
+address;phone;character varying;NO
+category;name;character varying;NO
+category;last_update;timestamp without time zone;NO
+category;category_id;integer;NO
+city;city_id;integer;NO
+city;city;character varying;NO
+city;last_update;timestamp without time zone;NO
+city;country_id;smallint;NO
+country;last_update;timestamp without time zone;NO
+country;country;character varying;NO
+country;country_id;integer;NO
+customer;last_name;character varying;NO
+customer;customer_id;integer;NO
+customer;store_id;smallint;NO
+customer;address_id;smallint;NO
+customer;activebool;boolean;NO
+customer;create_date;date;NO
+customer;last_update;timestamp without time zone;YES
+customer;active;integer;YES
+customer;first_name;character varying;NO
+customer;email;character varying;YES
+film;rental_rate;numeric;NO
+film;special_features;ARRAY;YES
+film;language_id;smallint;NO
+film;release_year;integer;YES
+film;film_id;integer;NO
+film;rental_duration;smallint;NO
+film;length;smallint;YES
+film;description;text;YES
+film;replacement_cost;numeric;NO
+film;rating;USER-DEFINED;YES
+film;last_update;timestamp without time zone;NO
+film;title;character varying;NO
+film;fulltext;tsvector;NO
+film_actor;actor_id;smallint;NO
+film_actor;film_id;smallint;NO
+film_actor;last_update;timestamp without time zone;NO
+film_category;film_id;smallint;NO
+film_category;category_id;smallint;NO
+film_category;last_update;timestamp without time zone;NO
+inventory;inventory_id;integer;NO
+inventory;film_id;smallint;NO
+inventory;store_id;smallint;NO
+inventory;last_update;timestamp without time zone;NO
+language;language_id;integer;NO
+language;last_update;timestamp without time zone;NO
+language;name;character;NO
+payment;payment_id;integer;NO
+payment;payment_date;timestamp without time zone;NO
+payment;amount;numeric;NO
+payment;rental_id;integer;NO
+payment;staff_id;smallint;NO
+payment;customer_id;smallint;NO
+rental;inventory_id;integer;NO
+rental;rental_id;integer;NO
+rental;rental_date;timestamp without time zone;NO
+rental;last_update;timestamp without time zone;NO
+rental;staff_id;smallint;NO
+rental;return_date;timestamp without time zone;YES
+rental;customer_id;smallint;NO
+staff;picture;bytea;YES
+staff;last_name;character varying;NO
+staff;active;boolean;NO
+staff;staff_id;integer;NO
+staff;last_update;timestamp without time zone;NO
+staff;address_id;smallint;NO
+staff;first_name;character varying;NO
+staff;username;character varying;NO
+staff;password;character varying;YES
+staff;email;character varying;YES
+staff;store_id;smallint;NO
+store;last_update;timestamp without time zone;NO
+store;address_id;smallint;NO
+store;manager_staff_id;smallint;NO
+store;store_id;integer;NO
